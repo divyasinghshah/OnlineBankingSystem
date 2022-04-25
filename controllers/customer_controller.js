@@ -110,45 +110,6 @@ module.exports.withdrawFunds= async function(req,res){
                 a=Math.abs(Number(a.trim()));
 
                 
-                // Customer.findById(req.params.id,function(err,customer){
-                //     if(err){
-                //         console.log(err);
-                //         return res.redirect('back');
-                //     }
-                //     const newBal = customer.currentBal-a;
-
-                //     Customer.findByIdAndUpdate(customer._id,{
-                //         currentBal:newBal 
-                //     },function(err,c){
-                //         if(err){
-                //             console.log(err); return res.redirect('back');
-                //         }
-                        
-                //         // return res.redirect('back');
-                //         Customer.findOne({accNo:req.body.transferTo},function(err,cust){
-                //             if(err){
-                //                 console.log(err);
-                //                 return res.redirect('back');
-                //             }
-                //             const newBal = cust.currentBal +a;
-                            
-                //             Customer.findByIdAndUpdate(cust._id,{
-                //                 currentBal:newBal 
-                //             },function(err,c){
-                //                 if(err){console.log(err); return;}
-                                
-                //                 return res.redirect('back');
-                //             });
-                //         });
-                //     });
-                   
-                    
-                // });
-          
-
-
-
-                // transaction
             
 
              Customer.findById(req.params.id,function(err,customer){
@@ -215,17 +176,9 @@ module.exports.withdrawFunds= async function(req,res){
     
                         });
 
-
-
-
-
-
-
                     });
 
-                    
-
-                    
+                                     
                    
                     
                 });
